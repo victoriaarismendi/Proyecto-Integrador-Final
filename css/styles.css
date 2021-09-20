@@ -154,6 +154,86 @@ footer{
     width:100%;
 }
 
+/*css pagina detalle de película*/
+.portadaPelicula {
+    width: 100vw;
+    height: 60vh;
+}
+.centroPelicula {
+    margin: 0px 50px;
+}
+.tituloPrincipal {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.listaDetalle {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 18px;
+    color: white;
+}
+.datosPelicula {
+    color: white;
+    font-size: 28px;
+    margin: 16px 0px;
+}
+
+/*css pagina detalle serie*/
+.portadaSerie {
+    width: 100vw;
+    height: 60vh;
+}
+.centroSerie {
+    margin: 0px 50px;
+}
+.datosSerie {
+    color: white;
+    font-size: 28px;
+    margin: 16px 0px;
+}
+
+/*css pagina generos*/
+.centroGenero {
+    margin: 0px 50px;
+}
+.tituloGeneros {
+    text-align: center;
+    margin: 12px;
+    color: white;
+    font-size: 35px;
+}
+.genero {
+    border: solid 3px #061935c2;
+    background-color: #081c3c;
+    margin: 14px;
+    color: white;
+    
+}
+.listaGenero {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 12px;
+    font-size: 20px;
+}
+.generoPeliculas {
+    margin: 12px;
+    font-size: 26px;
+    color: white;
+}
+
+.generoSeries {
+    margin: 12px;
+    font-size: 26px;
+    color: white;
+}
+
 
 /* Responsive (siempre abajo/ultimo)*/
 
