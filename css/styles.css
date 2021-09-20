@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/*Universal*/ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #061327;
+}
+
+/*Header*/ 
+nav{
+    width:100%;
+    background: #081c3c;
+    display: flex;
+
+}
+
+nav #logo{
+    /* background: blue; */
+    width: 20%;
+}
+
+nav #menu{
+    width: 80%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#menu ul {
+    display: flex;
+    margin-right: 36px;
+}
+
+#menu ul li{
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+}
+
+#menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#buscador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top:20px ;
+    padding-bottom:20px ;
+    padding-left:50px ;
+    padding-right:50px ;
+}
+
+#buscador form {
+  width:60%;
+}
+
+#buscador form h1{
+  color:white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#buscador form input{
+   width:100%;
+   padding: 15px;
+   text-align: center;
+   border-radius: 10px;
+}
+
+#buscador input:focus{
+  outline: none;
+}
+
+
+
+
+
+/*Footer*/
+footer{
+    background: #081c3c;
+    margin-top: 100px;
+    color:white;
+    padding:20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.listaFooter {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 20px;
+}
+
+.integrantes {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.integrantesList {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.titulo {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.footerRedes li a i {
+    margin-top: 10px;
+    color: white;
+}
+#principal{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#secciones{
+    margin-top: 25px;
+}
+
+#secciones section{
+    margin-bottom: 25px;
+}
+
+#secciones section h1{
+    color:white;
+    margin-bottom: 25px;
+}
+
+#secciones section .peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+
+}
+
+#secciones section .peliculas .pelicula{
+    width: 17%;
+    margin-top: 20px;
+}
+
+#secciones section .peliculas .pelicula img{
+    width:100%;
+}
+
+
+/* Responsive (siempre abajo/ultimo)*/
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav #menu{
+        width: 100%;
+    }
+    
+    nav #menu ul{
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #buscador form {
+        width:100%;
+    }
+
+    #secciones section .peliculas .pelicula{
+        width:45%;
+        margin: 5px;
+    }
+}
