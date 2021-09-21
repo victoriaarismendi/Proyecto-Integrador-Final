@@ -417,7 +417,7 @@ body{
 }
 
 @media (max-width: 600px) {
-    nav {
+    /*nav {
         flex-direction: column;
     }
 
@@ -438,7 +438,7 @@ body{
 
     #buscador form {
         width:100%;
-    }
+    }*/
 
     #secciones section .peliculas .pelicula{
         width:45%;
