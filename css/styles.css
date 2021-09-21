@@ -245,7 +245,6 @@ body{
     align-items: center;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     margin: 0px 30px;
     padding-inline-start: 0px;
