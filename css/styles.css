@@ -169,7 +169,6 @@ body{
     width: 100%;
 }
 .peliculaGeneroRomance h2 {
-    display: inline-block;
     margin: 20px 10px;
     text-align: center;
     color: white;
@@ -261,7 +260,7 @@ body{
 }
 
 .buscador {
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -294,7 +293,7 @@ body{
 /*Footer M*/
 .mainFooter{
     background: #081c3c;
-    margin-top: 100px;
+    margin-top: 50px;
     color:white;
     font-size: 13px;
     text-align: center;
@@ -318,11 +317,13 @@ body{
     font-size: 15px;
     margin-top: 10px;
 }
-.footerRedes li a i {
+.footerRedes li {
+    
     margin-top: 10px;
+}
+.footerRedes li a i {
     color: white;
 }
-
 
 /* Responsive (siempre abajo/ultimo)*/
 
