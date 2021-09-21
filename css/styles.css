@@ -52,8 +52,8 @@ body{
 
 /*css pagina detalle de película*/
 .portadaPelicula {
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 370px;
 }
 .centroPelicula {
     margin: 0px 50px;
@@ -81,8 +81,8 @@ body{
 
 /*css pagina detalle serie*/
 .portadaSerie {
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 370px;
 }
 .centroSerie {
     margin: 0px 50px;
@@ -127,6 +127,10 @@ body{
 .generoSeries {
     margin: 12px;
     font-size: 26px;
+    color: white;
+}
+.irDetalleGenero {
+    text-decoration: none;
     color: white;
 }
 
@@ -441,3 +445,60 @@ body{
     }
 }
 
+@media (max-width: 420px) {
+    /*detalle película*/
+    .portadaPelicula {
+        width: 100%;
+        height: 210px;
+    }
+    .centroPelicula {
+        margin: 0px 35px;
+    }
+    .tituloPrincipal {
+        font-size: 28px;        
+    }
+    .datosPelicula {
+        font-size: 21px;
+        margin: 16px 0px;
+    }
+    .sinopsisPelicula {
+        line-height: 30px;
+    }
+
+    /*detalle serie*/
+    .portadaSerie {
+        width: 100%;
+        height: 210px;
+    }
+    .centroSerie {
+        margin: 0px 35px;
+    }
+    .datosSerie {
+        font-size: 21px;
+        margin: 20px 0px;
+    } 
+    .sinopsisSerie {
+        line-height: 32px;
+    }  
+    /*pagina generos*/
+    .centroGenero {
+        margin: 0px 30px;
+    }
+    .tituloGeneros {
+        font-size: 30px;
+    }
+    
+    .listaGenero {
+        font-size: 19px;
+    }
+    .generoPeliculas {
+        font-size: 22px;
+    }
+    
+    .generoSeries {
+        font-size: 22px;
+        margin: 14px;    
+    }
+   
+
+}
