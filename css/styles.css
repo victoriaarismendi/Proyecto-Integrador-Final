@@ -178,6 +178,9 @@ body{
 .resultadosDeBusquedaW {
     margin: 30px;
 }
+.sinResultados {
+    display: none;
+}
 .leyendaResultados {
     display: block;
     text-align: start;
