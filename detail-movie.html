@@ -8,13 +8,49 @@
     <title>EndGame</title>
     <!--css-->
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
     <!--icono fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
 <!--parte central-->
     <div class="mainContainer">
-    
+        <header class="mainHeader">
+            <nav class="navMenu">
+                <div class="logo">
+                    <h1 class="logoH1">netfleex</h1>
+        
+                </div>
+        
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="inicio.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="generos.html">Géneros</a>
+                        </li>
+                        <li>
+                            <a href="series.html">Series</a>
+                        </li>
+                        <li>
+                            <a href="peliculas.html">Peliculas</a>
+                        </li>
+                        <li>
+                            <a href="favoritos.html">Favoritos</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="buscador">
+                    <form class="formBuscador" action="search-results.html" method="GET">
+                        <input class="formBuscadorInput" type="text" placeholder="Buscar series y películas">
+                        <button class="buttonBuscador" type="submit">Buscar</button>
+                    </form>
+                </div>
+                
+            </nav>
+        </header>
         <main> 
          <!--Portada de la película-->
             <section class="portadaPelicula">
@@ -48,6 +84,37 @@
 
 
     </div>
+    <footer class="mainFooter">
+
+        <ul class="listaFooter">
+
+            <div class="titulo">
+            <li>Netfleeex </li>
+            </div>
+
+            <div class="footerRedes">
+                <li>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/home?lang=es"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                </li>
+            </div>
+
+            <div class="integrantes">
+            <li>Integrantes</li>
+            </div>
+
+            <div class="integrantesList">
+            <li>Arismendi Victoria</li>
+            <li>Calliera Maria</li>
+            <li>Chandía Micaela</li>
+            </div>
+
+        </ul>
+        
+        
+    </footer>
 
     
 </body>

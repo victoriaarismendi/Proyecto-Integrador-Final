@@ -7,38 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netfleex</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <div id="logo">
-            <img width="100px" height="" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-                alt="Netfleex">
-        </div>
-
-        <div id="menu">
-            <ul>
-                <li> 
-                    <a href="inicio.html">Inicio</a>
-                </li>
-                </li>
-                <li>
-                    <a href="generos.html">Géneros</a>
-                </li>
-                <li>
-                    <a href="series.html">Series</a>
-                </li>
-                <li>
-                    <a href="peliculas.html">Peliculas</a>
-                </li>
-                <li>
-                    <a href="favoritos.html">Favoritos</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
+    <header class="mainHeader">
+        <nav class="navMenu">
+            <div class="logo">
+                <h1 class="logoH1">netfleex</h1>
+    
+            </div>
+    
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="inicio.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="generos.html">Géneros</a>
+                    </li>
+                    <li>
+                        <a href="series.html">Series</a>
+                    </li>
+                    <li>
+                        <a href="peliculas.html">Peliculas</a>
+                    </li>
+                    <li>
+                        <a href="favoritos.html">Favoritos</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="buscador">
+                <form class="formBuscador" action="search-results.html" method="GET">
+                    <input class="formBuscadorInput" type="text" placeholder="Buscar series y películas">
+                    <button class="buttonBuscador" type="submit">Buscar</button>
+                </form>
+            </div>
+            
+        </nav>
+    </header>
     <div id="principal">
 
         <div id="secciones">
@@ -87,16 +95,37 @@
             </div>
         </div>
 
-    <footer>
-        <p>
-            Netfleeex <br> <br>
-            INTEGRANTES <br>
-            Arismendi Victoria <br>
-            Calliera Maria <br>
-            Chandia Micaela
-        </p>
-    </footer>
+        <footer class="mainFooter">
 
+            <ul class="listaFooter">
+    
+                <div class="titulo">
+                <li>Netfleeex </li>
+                </div>
+    
+                <div class="footerRedes">
+                    <li>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/home?lang=es"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                    <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                </div>
+    
+                <div class="integrantes">
+                <li>Integrantes</li>
+                </div>
+    
+                <div class="integrantesList">
+                <li>Arismendi Victoria</li>
+                <li>Calliera Maria</li>
+                <li>Chandía Micaela</li>
+                </div>
+    
+            </ul>
+            
+            
+        </footer>
 </body>
 
 </html> 
