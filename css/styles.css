@@ -11,10 +11,12 @@ html{
 }
 
 body{
+    display: block;
     background-color: #061327;
 }
 
 /*Header*/ 
+/*
 nav{
     width:100%;
     background: #081c3c;
@@ -23,7 +25,6 @@ nav{
 }
 
 nav #logo{
-    /* background: blue; */
     width: 20%;
 }
 
@@ -80,14 +81,14 @@ nav #menu{
 
 #buscador input:focus{
   outline: none;
-}
+}*/
 
 
 
 
 
 /*Footer*/
-footer{
+/*footer{
     background: #081c3c;
     margin-top: 100px;
     color:white;
@@ -118,7 +119,7 @@ footer{
 .footerRedes li a i {
     margin-top: 10px;
     color: white;
-}
+}*/
 #principal{
     width: 90%;
     margin: 0 auto;
@@ -234,8 +235,286 @@ footer{
     color: white;
 }
 
+/*Detalle de género M*/ 
+/*Main*/
+.mainDetailGeneroRomance {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*Titulo*/
+.tituloGeneroRomance h1 {
+    font-size: 45px;
+    margin-left: 0px;
+    margin-right: 55px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+/*Películas*/
+.peliculasRomance {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.peliculasRomance article {
+    width: 300px;
+    margin: 10px 5px;
+    
+}
+
+.contenedorDePortada img {
+    width: 100%;
+}
+.peliculaGeneroRomance h2 {
+    display: inline-block;
+    margin: 20px 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Página Resultados de búsqueda M*/
+.resultadosDeBusquedaW {
+    margin: 30px;
+}
+.leyendaResultados {
+    display: block;
+    text-align: start;
+    font-size: 18px;
+    margin: 40px 30px;
+    color: white;
+}
+.noMasResultados {
+    margin: 30px;   
+}
+.noMasResultados h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.busquedadWalkingSerie {
+    margin: 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    justify-content: center;
+}
+.contenedorImgBusquedaW img {
+    width: 100%;
+}
+.busquedadWalkingSerie h2 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+
+/*Header Desktop M*/
+.navMenu {
+    height: 80px;
+    width: 100%;
+    background: #081c3c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.logo {
+    display: block;
+    width: 20%;
+    height: 80px;
+}
+.logoH1 {
+    margin: 25px 35px;
+    text-align: start;
+    color: white;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+#menu ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0px 30px;
+    padding-inline-start: 0px;
+    justify-content: center;
+}
+#menu ul li {
+    font-size: 18px;
+    margin: 5px 10px;
+    align-items: center;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.buscador {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 60px;
+}
+.formBuscador {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.formBuscadorInput {
+    width: 250px;
+    height: 35px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:white;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+.buttonBuscador {
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: rgb(10, 10, 51);
+    border-radius: 10px;
+}
+
+/*Footer M*/
+.mainFooter{
+    background: #081c3c;
+    margin-top: 100px;
+    color:white;
+    font-size: 13px;
+    text-align: center;
+}
+.listaFooter {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 20px;
+}
+
+.integrantes {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.integrantesList {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.titulo {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.footerRedes li a i {
+    margin-top: 10px;
+    color: white;
+}
+
 
 /* Responsive (siempre abajo/ultimo)*/
+
+@media (max-width: 425px) {
+
+    /*Título Detalle de Género*/
+    .tituloGeneroRomance h1 {
+        font-size: 35px;
+        margin-left: 55px;
+        margin-right: 55px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    /*Peliculas */
+
+    .peliculasRomance article {
+        margin: 30px 55px;
+    }
+
+
+    .peliculaGeneroRomance h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Resultados de búsqueda*/
+    .leyendaResultados {
+        margin: 30px; 
+        font-size: 12px;
+        text-align: center;  
+    }
+    .busquedadWalkingSerie {
+        margin: 20px 30px;
+    }
+
+    .noMasResultados h3{
+        text-align: center;
+        font-size: 15px;
+        color: white;
+    }
+
+
+    /*Header*/
+    .mainHeader {
+        height: 180px;
+    }
+    .navMenu{
+        height: 180px;
+    }
+
+    .logo{
+        /* background: blue; */
+        width: 100%;
+        height: 50px;
+    }
+    .logoH1 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    #menu {
+        display: block;
+        height: 10px;
+    }
+
+    #menu ul li {
+        margin: 5px 10px;
+        font-size: 16px
+    }
+
+    .buscador {
+        width: 100%;
+        margin-left: 10px ;
+        margin-right: 10px;
+        justify-content: center;
+        
+    }
+    .formBuscador {
+        justify-content: center;
+    }
+
+    .formBuscadorInput {
+        width: 50%;
+    }
+
+}
 
 @media (max-width: 600px) {
     nav {
@@ -266,3 +545,4 @@ footer{
         margin: 5px;
     }
 }
+
