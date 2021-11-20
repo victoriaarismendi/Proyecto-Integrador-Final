@@ -1,0 +1,30 @@
+api key
+
+d14abb99afad7979eee2d4a59fbf2661
+
+
+Películas populares 
+ 
+https://api.themoviedb.org/3/movie/popular?api_key=d14abb99afad7979eee2d4a59fbf2661&language=en-US&page=1
+
+Lo más visto en películas
+
+https://api.themoviedb.org/3/movie/now_playing?api_key=d14abb99afad7979eee2d4a59fbf2661&language=en-US
+
+Películas más valoradas
+
+https://api.themoviedb.org/3/movie/top_rated?api_key=d14abb99afad7979eee2d4a59fbf2661&language=en-US&page=1
+
+///////////////////
+
+Series populares 
+
+https://api.themoviedb.org/3/tv/popular?api_key=d14abb99afad7979eee2d4a59fbf2661&language=en-US&page=1
+
+Lo más visto en series
+
+https://api.themoviedb.org/3/tv/top_rated?api_key=d14abb99afad7979eee2d4a59fbf2661&language=en-US&page=1
+
+Series más valoradas
+
+https://api.themoviedb.org/3/tv/latest?api_key=d14abb99afad7979eee2d4a59fbf2661&language=en-US
