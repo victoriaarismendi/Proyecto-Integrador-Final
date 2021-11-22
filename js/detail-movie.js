@@ -1,6 +1,7 @@
 let qs = location.search;
-let qsto = new URLSearchParams (qs);
-let id = qsto.get ('movie_id');
+let qsto = new URLSearchParams(qs);
+let id = qsto.get('id');
+
 
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=d3bf40c9b6ae8b0603c799bd0fc81e36`
 

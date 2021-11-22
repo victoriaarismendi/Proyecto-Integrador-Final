@@ -33,12 +33,9 @@ fetch(peliculas_populares)
 
         let articulos = '';
 
-        console.log(response.results);
-
         for(let i = 0; i < response.results.length; i++) {
 
             let pelicula = response.results;
-
             articulos += `
             <article class="pelicula">
                 <a href="detail-movie.html?id=${pelicula[i].id}">

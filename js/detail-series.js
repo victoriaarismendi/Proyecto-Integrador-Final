@@ -8,6 +8,7 @@ let id = qsto.get ('tv_id'); //obtener el dato del id del objeto literal
 //armar un fecth para buscar los datos de la pelicula 
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=d3bf40c9b6ae8b0603c799bd0fc81e36`  //la parte del id va ir cambiando dependiendo del valor que obtenemos de la query string
 fetch (url)
+console.log(url)
     .then (function (response) {
         return response.json ();
     })
@@ -47,6 +48,7 @@ fetch (url)
 
     //crear array que vamos a ir completando con datos
     let favoritos = []
+
     //recupero el storage
     let recuperoStorage = localStorage.getItem('series') //vamos a buscar el array para preguntar si hay algo adentro, me devuelve los datos o null
 
@@ -62,7 +64,7 @@ fetch (url)
      //fijarme que id este en el array - controlar antes de entregar me salia error
      if (favoritos.includes(id)) {
          fav.innerText = "Quitar de favoritos"
-     }
+        }
      //detectamos el evento
      fav.addEventListener ('click', function (evento) {
          evento.preventDefault (); //cancelamos para que no me recarge la pagina, que no funcione como link
