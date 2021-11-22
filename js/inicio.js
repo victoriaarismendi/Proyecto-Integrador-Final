@@ -39,7 +39,7 @@ fetch(peliculas_populares)
 
             articulos += `
             <article class="pelicula">
-                <a href="detail-movie.html?id=${ pelicula.id }">
+                <a href="detail-movie.html?id=${pelicula.id}">
                     <img src="https://image.tmdb.org/t/p/w342/${ pelicula.backdrop_path }" alt="The Duff">
                     <p>${ pelicula.original_title }</p>
                 </a>
@@ -124,7 +124,7 @@ fetch(series_populares)
             if(serie.backdrop_path != null) { // porque no tiene foto
                 articulos += `
                 <article class="pelicula">
-                    <a href="detail-series.html?id=${ serie.id }">
+                    <a href="detail-series.html?id=${ serie.id}">
                         <img src="https://image.tmdb.org/t/p/w342/${ serie.backdrop_path }" alt="The Duff">
                         <p>${ serie.original_name }</p>
                     </a>
@@ -155,7 +155,7 @@ fetch(mas_visto_series)
             if(serie.backdrop_path != null) { // porque no tiene foto
                 articulos += `
                 <article class="pelicula">
-                    <a href="detail-series.html?id=${ serie.id }">
+                    <a href="detail-series.html?id=${ serie.id}">
                         <img src="https://image.tmdb.org/t/p/w342/${ serie.backdrop_path }" alt="The Duff">
                         <p>${ serie.original_name }</p>
                     </a>
@@ -186,7 +186,7 @@ fetch(series_mas_valoradas)
             if(serie.backdrop_path != null) { // porque no tiene foto
                 articulos += `
                 <article class="pelicula">
-                    <a href="detail-series.html?id=${ serie.id }">
+                    <a href="detail-series.html?id=${ serie.id}">
                         <img src="https://image.tmdb.org/t/p/w342/${ serie.backdrop_path }" alt="The Duff">
                         <p>${ serie.original_name }</p>
                     </a>
