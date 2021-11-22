@@ -1,6 +1,6 @@
-let qs = location.search;
+/*let qs = location.search;
 let qsto = new URLSearchParams (qs);
-let id = qsto.get ('id');
+let id = qsto.get ('id');*/
 
 
 //genero peliculas

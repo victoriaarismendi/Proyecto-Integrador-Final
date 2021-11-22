@@ -95,9 +95,9 @@ fetch(peliculas_mas_valoradas)
 
             articulos += `
             <article class="pelicula">
-                <a href="detail-movie.html?id=${ pelicula.id }">
-                    <img src="https://image.tmdb.org/t/p/w342/${ pelicula.backdrop_path }" alt="The Duff">
-                    <p>${ pelicula.original_title }</p>
+                <a href="./detail-movie.html?id=${pelicula.id}">
+                    <img src="https://image.tmdb.org/t/p/w342/${pelicula.backdrop_path}" alt="The Duff">
+                    <p>${pelicula.original_title }</p>
                 </a>
             </article>
             `
