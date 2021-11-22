@@ -33,15 +33,18 @@ fetch(peliculas_populares)
 
         let articulos = '';
 
+        console.log(response.results);
+
         for(let i = 0; i < response.results.length; i++) {
 
-            let pelicula = response.results[i];
+            let pelicula = response.results;
 
             articulos += `
             <article class="pelicula">
-                <a href="detail-movie.html?id=${pelicula.id}">
-                    <img src="https://image.tmdb.org/t/p/w342/${ pelicula.backdrop_path }" alt="The Duff">
-                    <p>${ pelicula.original_title }</p>
+                <a href="detail-movie.html?id=${pelicula[i].id}">
+                    <img src="https://image.tmdb.org/t/p/w342/${ pelicula[i].poster_path }" alt="The Duff">
+                    <p>${ pelicula[i].original_title }</p>
+                    <p>${pelicula[i].release_date}<p>
                 </a>
             </article>
             `
@@ -63,13 +66,14 @@ fetch(mas_visto_peliculas)
 
         for(let i = 0; i < response.results.length; i++) {
 
-            let pelicula = response.results[i];
+            let pelicula = response.results;
 
             articulos += `
             <article class="pelicula">
-                <a href="detail-movie.html?id=${ pelicula.id }">
-                    <img src="https://image.tmdb.org/t/p/w342/${ pelicula.backdrop_path }" alt="The Duff">
-                    <p>${ pelicula.original_title }</p>
+                <a href="detail-movie.html?id=${ pelicula[i].id }">
+                    <img src="https://image.tmdb.org/t/p/w342/${ pelicula[i].poster_path }" alt="The Duff">
+                    <p>${ pelicula[i].original_title }</p>
+                    <p>${pelicula[i].release_date}<p>
                 </a>
             </article>
             `
@@ -91,13 +95,14 @@ fetch(peliculas_mas_valoradas)
 
         for(let i = 0; i < response.results.length; i++) {
 
-            let pelicula = response.results[i];
+            let pelicula = response.results;
 
             articulos += `
             <article class="pelicula">
-                <a href="./detail-movie.html?id=${pelicula.id}">
-                    <img src="https://image.tmdb.org/t/p/w342/${pelicula.backdrop_path}" alt="The Duff">
-                    <p>${pelicula.original_title }</p>
+                <a href="detail-movie.html?id=${ pelicula[i].id }">
+                    <img src="https://image.tmdb.org/t/p/w342/${ pelicula[i].poster_path }" alt="The Duff">
+                    <p>${ pelicula[i].original_title }</p>
+                    <p>${pelicula[i].release_date}<p>
                 </a>
             </article>
             `
@@ -119,18 +124,18 @@ fetch(series_populares)
 
         for(let i = 0; i < response.results.length; i++) {
 
-            let serie = response.results[i];
-
-            if(serie.backdrop_path != null) { // porque no tiene foto
-                articulos += `
-                <article class="pelicula">
-                    <a href="detail-series.html?id=${ serie.id}">
-                        <img src="https://image.tmdb.org/t/p/w342/${ serie.backdrop_path }" alt="The Duff">
-                        <p>${ serie.original_name }</p>
+            let serie = response.results;
+            console.log(response.results);
+            
+            articulos += 
+            `      <article class="pelicula">
+                    <a href="detail-series.html?id=${ serie[i].id }">
+                        <img src="https://image.tmdb.org/t/p/w342/${ serie[i].poster_path }" alt="The Duff">
+                        <p>${ serie[i].original_name }</p>
+                        <p>${serie[i].first_air_date}<p>
                     </a>
                 </article>
                 `
-            }
 
         }
 
@@ -150,18 +155,17 @@ fetch(mas_visto_series)
 
         for(let i = 0; i < response.results.length; i++) {
 
-            let serie = response.results[i];
+            let serie = response.results;
 
-            if(serie.backdrop_path != null) { // porque no tiene foto
                 articulos += `
                 <article class="pelicula">
-                    <a href="detail-series.html?id=${ serie.id}">
-                        <img src="https://image.tmdb.org/t/p/w342/${ serie.backdrop_path }" alt="The Duff">
-                        <p>${ serie.original_name }</p>
+                    <a href="detail-series.html?id=${ serie[i].id }">
+                        <img src="https://image.tmdb.org/t/p/w342/${ serie[i].poster_path }" alt="The Duff">
+                        <p>${ serie[i].original_name }</p>
+                        p>${serie[i].first_air_date}<p>
                     </a>
                 </article>
                 `
-            }
 
         }
 
@@ -181,18 +185,17 @@ fetch(series_mas_valoradas)
 
         for(let i = 0; i < response.results.length; i++) {
 
-            let serie = response.results[i];
+            let serie = response.results;
 
-            if(serie.backdrop_path != null) { // porque no tiene foto
                 articulos += `
                 <article class="pelicula">
-                    <a href="detail-series.html?id=${ serie.id}">
-                        <img src="https://image.tmdb.org/t/p/w342/${ serie.backdrop_path }" alt="The Duff">
-                        <p>${ serie.original_name }</p>
+                    <a href="detail-series.html?id=${serie[i].id}">
+                        <img src="https://image.tmdb.org/t/p/w342/${serie[i].poster_path}" alt="The Duff">
+                        <p>${serie[i].original_name }</p>
+                        p>${serie[i].first_air_date}<p>
                     </a>
                 </article>
                 `
-            }
 
         }
 
