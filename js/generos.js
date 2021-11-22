@@ -21,8 +21,8 @@ fetch (url)
         for (let i=0; i<info.length; i++) {
             elementosDeLista += `<li> ${info [i].name} <li>`
 
-            /*articulos += `
-            <a href="detail-genres.html?id=${detail-genres.id}">
+           /* articulos += `
+            <a href="./detail-genres.html?id=${detail-genres[i].id}">
             `*/
         }
         
@@ -71,11 +71,11 @@ fetch (urlSerie)
         for (let i=0; i<infoSerie.length; i++) {
             elementosDeLista += `<li> ${infoSerie [i].name} <li>`
 
-           /* articulos += 
+          /* articulos += 
             `
             <article> 
-            <a href="detail-genres.html?id=${generos.id}" > </a>
-            </article> `*/
+            <a href="./detail-genres.html?id=${generos[i].id}" > </a>
+            </article> ` */
         }
         
         //meto la variable dentro del ul

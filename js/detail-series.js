@@ -8,7 +8,7 @@ let id = qsto.get ('tv_id'); //obtener el dato del id del objeto literal
 //armar un fecth para buscar los datos de la pelicula 
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=d3bf40c9b6ae8b0603c799bd0fc81e36`  //la parte del id va ir cambiando dependiendo del valor que obtenemos de la query string
 fetch (url)
-    .then (function (response) {
+   .then (function (response) {
         return response.json ();
     })
     .then (function (data) {
@@ -86,6 +86,6 @@ fetch (url)
          localStorage.setItem("series", favsToString); //lo guardamos en el storage
 
          console.log(localStorage);
-     })
+     }) 
 
     
