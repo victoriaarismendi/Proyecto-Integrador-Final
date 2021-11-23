@@ -39,3 +39,27 @@ fetch(url2)
     .catch(function(error){
         console.log(error);
     })
+
+
+
+    console.log('validando');
+
+    let formulario = document.querySelector('form');
+    let inputField = document.querySelector('.formBuscadorInput');
+    let message = document.querySelector('.mensaje');
+    
+    formulario.addEventListener('submit', function(evento) {
+        evento.preventDefault(); // Evita el envío del formulario
+        console.log('no');
+    
+        //chequear que tenga datos
+        if (inputField.value == '') { // Preguntamos si el valor del campo está vacio
+            message.innerText = "El campo está vacío.";
+            message.style.color = "white";
+            inputField.style.outline = "2px solid white";
+        } else if (inputField.value.length < 3){
+            message.innerText = "Debe escribir al menos 3 caracteres.";
+        } else {
+            this.submit();
+        }
+    })
