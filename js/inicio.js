@@ -208,7 +208,7 @@ let formulario = document.querySelector('form');
 let inputField = document.querySelector('.formBuscadorInput');
 let message = document.querySelector('.mensaje');
 
-formulario.addEventListener('submit', function(evento){
+formulario.addEventListener('submit', function(evento) {
     evento.preventDefault(); // Evita el envío del formulario
     console.log('no');
 

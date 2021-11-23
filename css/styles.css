@@ -277,12 +277,13 @@ body{
     justify-content: center;
     width: 20%;
     margin-left: 200px;
+    flex-direction: row;
 }
 /**/
 .formBuscador {
     width: 250px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
 }
 .formBuscadorInput {
