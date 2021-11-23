@@ -18,8 +18,9 @@ fetch (url)
         let genero = document.querySelector ('.genero') //capturo el elemento del DOM 
         let elementosDeLista = ''
 
-       
-        
+       genero.style.color = "white";
+       genero.style.decoration = "none";
+
 
         for (let i=0; i<info.length; i++) {
             elementosDeLista += `<article>
@@ -73,7 +74,7 @@ fetch (urlSerie)
         let generoSerie = document.querySelector ('.generoUno') //capturo el elemento del DOM 
         let elementosDeLista = '' //guardar lo que vayamos generando y despues pasarle al dom
 
-        
+       
         
 
 
