@@ -230,7 +230,7 @@ body{
     background: #081c3c;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 .logo {
     display: block;
@@ -270,21 +270,22 @@ body{
     text-decoration: none;
 }
 
+/**/
 .buscador {
-    width: 25%;
     display: flex;
     align-items: center;
-    justify-content: end;
-    margin-left: 60px;
+    justify-content: center;
+    width: 20%;
 }
+/**/
 .formBuscador {
-    width: 100%;
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 .formBuscadorInput {
-    width: 250px;
+    width: 200px;
     height: 35px;
     padding: 15px;
     text-align: center;
@@ -299,6 +300,10 @@ body{
     color: white;
     background-color: rgb(10, 10, 51);
     border-radius: 10px;
+}
+.divBuscador{
+    display: flex;
+    flex-direction: row;
 }
 
 /*Footer M*/
