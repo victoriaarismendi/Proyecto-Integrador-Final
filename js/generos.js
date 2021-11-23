@@ -13,17 +13,22 @@ fetch (url)
         
     })
     .then (function (data) {
-        console.log(data.genres);
-        let info = data.genres
-        let genero = document.querySelector ('.listaGenero') //capturo el elemento del DOM 
+        console.log(data);
+        let info = data.genres //array de los datos que vinieron de la API
+        let genero = document.querySelector ('.genero') //capturo el elemento del DOM 
         let elementosDeLista = ''
 
-        for (let i=0; i<info.length; i++) {
-            elementosDeLista += `<li> ${info [i].name} <li>`
+       
+        
 
-           /* articulos += `
-            <a href="./detail-genres.html?id=${detail-genres[i].id}">
-            `*/
+        for (let i=0; i<info.length; i++) {
+            elementosDeLista += `<article>
+                                    <a href="./detail-genres.html?id=${info[i].id}"> 
+                                    <li> ${info[i].name} <li>
+                                    </a>
+                                </article>` 
+
+           
         }
         
         
@@ -63,19 +68,22 @@ fetch (urlSerie)
         
     })
     .then (function (data) {
-        console.log(data.genres);
+        console.log(data);
         let infoSerie = data.genres
-        let generoSerie = document.querySelector ('.genero') //capturo el elemento del DOM 
-        let elementosDeLista = ''
+        let generoSerie = document.querySelector ('.generoUno') //capturo el elemento del DOM 
+        let elementosDeLista = '' //guardar lo que vayamos generando y despues pasarle al dom
+
+        
+        
+
 
         for (let i=0; i<infoSerie.length; i++) {
-            elementosDeLista += `<li> ${infoSerie [i].name} <li>`
+            elementosDeLista += `<article>
+                                    <a href="./detail-genres.html?id=${infoSerie[i].id}">
+                                    <li> ${infoSerie [i].name} <li>
+                                    </a>
+                                 </article>`
 
-          /* articulos += 
-            `
-            <article> 
-            <a href="./detail-genres.html?id=${generos[i].id}" > </a>
-            </article> ` */
         }
         
         //meto la variable dentro del ul

@@ -1,4 +1,4 @@
-let series = [];
+/*let series = [];
 
 let storageSeries = localStorage.getItem('series');
 
@@ -60,4 +60,11 @@ for(let i = 0; i < peliculas.length; i++) {
 
 }
 
-section_pelicula.innerHTML = articulos_pelicula;
+section_pelicula.innerHTML = articulos_pelicula; */
+//favoritos peliculas
+//recupero storage y transformo en array
+let recuperoStorage = localStorage.getItem ('peliculasFavoritas');
+let favoritos = JSON.parse (recuperoStorage);
+
+//capturar el contenedor de los elementos a mostrar
+

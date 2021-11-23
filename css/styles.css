@@ -110,6 +110,15 @@ body{
     color: white;
     
 }
+.generoUno {
+    border: solid 3px #061935c2;
+    background-color: #081c3c;
+    margin: 14px;
+    color: white;
+    
+    
+    
+}
 .listaGenero {
     list-style: none;
     display: flex;
@@ -454,6 +463,7 @@ body{
         width: 100%;
         height: 210px;
     }
+    
     .centroPelicula {
         margin: 0px 35px;
     }
@@ -473,6 +483,7 @@ body{
         width: 100%;
         height: 210px;
     }
+    
     .centroSerie {
         margin: 0px 35px;
     }
