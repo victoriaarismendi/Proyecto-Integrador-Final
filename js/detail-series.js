@@ -48,14 +48,14 @@ fetch (url)
     })
     //favoritos
     //crear array que vamos a ir completando con datos
-    let favoritosSerie = []
+    let favoritosSeries = []
 
     //recupero el storage
     let recuperoStorage = localStorage.getItem('favoritosSeries') //vamos a buscar el array para preguntar si hay algo adentro, me devuelve los datos o null
 
     if (recuperoStorage != null ) { //distinto de null significa que hay datos
         //1ro tenemos que  transformarlo de cadena de texto y despues lo guardamos en favoritos
-        favoritos = JSON.parse (recuperoStorage);
+        favoritosSeries = JSON.parse (recuperoStorage);
      }
     
 
@@ -64,7 +64,7 @@ fetch (url)
      
 
      //fijarme que id este en el array - controlar antes de entregar me salia error
-     if (favoritosSerie.includes(id)) {
+     if (favoritosSeries.includes(id)) {
          favSeries.innerText = "Quitar de favoritos";
         }
      //detectamos el evento
@@ -72,22 +72,22 @@ fetch (url)
          evento.preventDefault (); //cancelamos para que no me recarge la pagina, que no funcione como link
 
         //preguntar si un id esta en favoritos/array
-         if (favoritosSerie.includes(id)) {
+         if (favoritosSeries.includes(id)) {
              //id en el array
-             let indice = favoritosSerie.indexOf(id);
+             let indice = favoritosSeries.indexOf(id);
 
              //borrar de favoritos a partir del indice un elemento
-             favoritos.splice(indice, 1);
+             favoritosSeries.splice(indice, 1);
              favSeries.innerText = "Agregar a favoritos"
          }
          //en caso de que de falso el if osea que el dato no este en el array
          else { //guardamos y agregar un dato al array
-             favoritosSerie.push (id); //el id es lo que me permite traer un dato en particular, es para poder ver lo que guarde, todos los datos, no solo el id 
+             favoritosSeries.push (id); //el id es lo que me permite traer un dato en particular, es para poder ver lo que guarde, todos los datos, no solo el id 
              favSeries.innerText = "Quitar de favoritos";
          }
 
          //guardar el array en el storage
-         let favsToStringSerie = JSON.stringify(favoritosSerie); //transformamos el array en una cadena de texto
+         let favsToStringSerie = JSON.stringify(favoritosSeries); //transformamos el array en una cadena de texto
          localStorage.setItem('favoritosSeries', favsToStringSerie); //lo guardamos en el storage
 
          console.log(localStorage);
