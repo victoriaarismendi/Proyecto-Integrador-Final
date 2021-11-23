@@ -38,7 +38,7 @@ fetch (url)
         let capturo= document.querySelector (".generos")
         for (let i=0; i<info.genres.length; i++) {                                  
             console.log(info.genres[i].name);
-            generos += ` Género:
+            generos += ` <p> Género: </p>
            <a href="./detail-genres.html?id=${info.genres[i].id}"> ${info.genres[i].name}</a>
            `
            
