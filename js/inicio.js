@@ -1,4 +1,5 @@
-//Películas populares 
+window.addEventListener("load", function () {
+    //Películas populares 
  
 let peliculas_populares = 'https://api.themoviedb.org/3/movie/popular?api_key=819b7c86c8607512f0fdebc52441505d&language=en-US&page=1';
 
@@ -199,3 +200,4 @@ fetch(series_mas_valoradas)
         section.innerHTML = articulos;
 
     })
+})
