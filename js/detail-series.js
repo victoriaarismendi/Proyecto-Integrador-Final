@@ -39,7 +39,7 @@ fetch (url)
                                 
             console.log(info.genres[i].name);
             generosSeries +=
-            ` Género:
+            ` <p> Género: </p>
             <a href="./detail-genres.html?id=${info.genres[i].id}">${info.genres[i].name}</a>` 
         }
     //reenviar los datos actualizados al  DOM  
