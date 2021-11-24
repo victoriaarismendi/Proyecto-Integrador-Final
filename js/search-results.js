@@ -5,7 +5,7 @@ let resultado = queryStringObj.get('resultado'); //obtengo el dato id del objeto
 let mensajeBusqueda = document.querySelector('.leyendaResultados');//capturo el elemento que quiero modificar
 mensajeBusqueda.innerText = `Resultados para "${resultado}"`//y lo modifico
 
-let url = `https://api.themoviedb.org/3/search/movie?api_key=9356bdf8fcc476bc9886493a22d862eb&language=en-US&query=${resultado}`;
+let url = `https://api.themoviedb.org/3/discover/movie?api_key=9356bdf8fcc476bc9886493a22d862eb&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`;
 
 fetch(url)
     .then(function(response){
@@ -25,8 +25,8 @@ fetch(url)
        } else {
            for (let i=0; i<resultadosMovies.length; i++){
                resultadosMovies += `<article>
-                                    <img src="https://image.tmdb.org/t/p/original/${info[i].poster_path}.jpg">
-                                    <h2>${info[i].title}</h2>
+                                    <img src="https://image.tmdb.org/t/p/original${info[i].poster_path}">
+                                    <h2>${info[i].original_title}</h2>
                                     </article>`           
                                 }
                                 
@@ -39,7 +39,7 @@ fetch(url)
         console.log('El error fue:' + error);
     })
 
-    console.log('validando');
+console.log('validando');
 
 let formulario = document.querySelector('form');
 let inputField = document.querySelector('.formBuscadorInput');

@@ -9,8 +9,8 @@ let url = `https://api.themoviedb.org/3/genre/movie/list/${id}?api_key=9356bdf8f
         return response.json();
     })
     .then(function(data){
-        console.log(data.genres);
-        let generos = data.genres; //array de datos que vino de la API
+        console.log(data);
+        let generos = data.results; //array de datos que vino de la API
         //capturar elementos del DOM
         let genero = document.querySelector('.detailTituloGenero');
         let elementoDeGenero = ''; 
@@ -34,6 +34,20 @@ fetch(url2)
     .then(function(data){
         console.log(data);
 
+        let info = data.results;
+        let resultadoGenero = '';
+        let resultados = document.querySelector('peliculaGeneroRomance');
+
+        for (let i=0; i<resultadoGenero.length; i++){
+            resultadoGenero += `<article class="peliculaGeneroRomance">
+                                <div class="contenedorDePortada">
+                                    <img src="https://image.tmdb.org/t/p/original${info[i].poster_path}" alt="Foto de la portada de la película Orgullo y prejuicio">
+                                </div>
+                                <h2>${info[i].original_title}</h2>
+                                </article>`
+        }
+
+        resultados.innerHTML += elementoDeGenero;
         
     })
     .catch(function(error){
